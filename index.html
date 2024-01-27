@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-----ナビゲーションバー-->
+    <nav class="navbar">
+        <div class="logo">The Cafe</div>
+        <div class="nav-links">
+            <a href="#home">ホーム</a>
+            <a href="#services">サービス</a>
+            <a href="#menu">メニュー</a>
+            <a href="#contact">問い合わせ</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!----スライドショー付きホームセクション-->
+    <div id="home">
+        <div class="slideshow-container">
+
+            <!---スライド1-->
+            <div class="slide fade">
+                <img src="image/home1.jpg" alt="home1">
+                <p class="slide-text">リラックスした雰囲気</p>
+            </div>
+
+            <!--スライド2-->
+            <div class="slide fade">
+                <img src="image/home2.jpg" alt="home2">
+                <p class="slide-text">美味しいスイーツ</p>
+            </div>
+            <!--スライド3-->
+            <div class="slide fade">
+                <img src="image/home3.jpg" alt="home3">
+                <p class="slide-text">挽きたてコーヒー</p>
+            </div>
+        </div>
+    </div>
+
+    <!---サービス-->
+    <h1 class="service-title">サービス</h1>
+    <section id="services">
+
+        <!----イートイン-->
+        <div class="service-card">
+            <h2>イートイン</h2>
+            <img src="image/eatin.jpg" alt="eatin">
+            <p>ここで美味しい食事を楽しんでください。</p>
+        </div>
+
+        <!----テイクアウト-->
+        <div class="service-card">
+            <h2>テイクアウト</h2>
+            <img src="image/takeout.jpg" alt="takeout">
+            <p>忙しい日にはお持ち帰りもできます。</p>
+        </div>
+    </section>
+
+    <!---メニュー-->
+    <h1 class="menu-title">メニュー(ドリンク&フード)</h1>
+    <section id="menu">
+        <div class="menu-category">
+            <!--Menu1----->
+            <div class="menu-item">
+                <h3>カフェラテ</h3>
+                <img src="image/menu1.jpg" alt="menu1">
+                <h4>価格： 400円</h4>
+                <p>濃厚なエスプレッソとほんのり甘いミルクが特徴です。</p>
+            </div>
+
+            <!---Menu2-->
+            <div class="menu-item">
+                <h3>抹茶ラテ</h3>
+                <img src="image/menu2.jpg" alt="menu2">
+                <h4>価格： 500円</h4>
+                <p>抹茶ラテは、抹茶とミルクの絶妙なバランスが特徴的です。</p>
+            </div>
+
+            <!---Menu3-->
+            <div class="menu-item">
+                <h3>パンケーキ</h3>
+                <img src="image/menu3.jpg" alt="menu3">
+                <h4>価格： 600円</h4>
+                <p>アイスクリームやチョコレートソースを添えた甘いスイーツです。</p>
+            </div>
+
+            <!---Menu4-->
+            <div class="menu-item">
+                <h3>ワッフル</h3>
+                <img src="image/menu4.jpg" alt="menu4">
+                <h4>価格： 700円</h4>
+                <p>様々なトッピングを添えて、シンプルながらの美味しいスイーツです。</p>
+            </div>
+        </div>
+    </section>
+
+    <!---問い合わせ-->
+    <section id="contact">
+        <div class="contact-container">
+            <!---電話番号、住所など-->
+            <div class="contact-info">
+                <h1 class="contact-item">The Cafe</h1>
+                <p class="contact-item">電話：012345678</p>
+                <p class="contact-item">住所: 東京都中央区〇〇</p>
+                <p class="contact-item">メール：contact@contact.com</p>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <label for="name">名前</label>
+                    <input type="text" placeholder="名前を入力してください">
+                    <label for="phone">電話番号</label>
+                    <input type="tel" placeholder="電話番号を入力してください">
+                    <label for="comment">コメント</label>
+                    <textarea name="comment" cols="30" rows="4"></textarea>
+                    <button class="submit-btn" type="submit">送信</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!---フッター-->
+    <footer>
+        <p>&copy; 2024 The Cafe</p>
+    </footer>
+
+    <!----Javascript file を繋ぐ-->
+    <script src="script.js"></script>
+</body>
+</html>
